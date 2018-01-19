@@ -1,0 +1,75 @@
+<% content_for :title, "Product Details | SOS Bracelets" %>
+
+<div class="container"  style="padding-top: 37px;">
+  <div class="row">
+    <div class="col-md-12 no-pad-xs">
+      <div class="row login_signup_heading" style="padding:0px;margin:0px;">
+        <div class="col-md-12">
+          <center><h3 class="heading_text">Product Details</i></h3></center>
+        </div>
+      </div>
+        <div class="jumbotron" style="padding-bottom:1em; background-color: rgba(255,255,255,0.9); border-radius:0 0 1em 1em;">
+          <div class="row">
+              <div class="col-md-12">
+                  <center>
+                             <div class="row">
+                               <div class="col-xs-12 col-md-4">
+                                 <div class="form-group">
+                                   <center>
+                                     <%= image_tag(@item.avatar(:medium), {id: "team_image",  style: "width:220px;height:220px;",class: "img-responsive img-thumbnail img-circle",alt: "Product Image"}) %>
+                                   <br>
+
+                                 </div>
+                               </div>
+                               <div class="col-xs-12 col-md-8">
+                                  <div class="form-group" style="margin-top:0.5em;">
+                                     <div class="col-md-3">
+                                         <%= label :title, "Title:",class: "login_signup_label"%>
+                                     </div>
+                                     <div class="col-md-9">
+                                         <%= label :title, @item.title,class: "login_signup_label"%>
+
+                                     </div>
+                                  </div>
+                                  <div class="form-group" style="margin-top:4.5em;">
+                                    <div class="col-md-3">
+                                        <%= label :price, "Price:",class: "login_signup_label" %>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <%= label :price, @item.price,class: "login_signup_label" %>
+
+                                    </div>
+                                  </div>
+                                  <div class="form-group" style="margin-top:8.5em;">
+                                     <div class="col-md-3">
+                                         <%= label :description, "Description:",class: "login_signup_label" %>
+                                     </div>
+                                     <div class="col-md-9" >
+                                         <%= label :description, @item.description,class: "login_signup_label" %>
+
+                                     </div>
+                                  </div>
+                               </div>
+                             </div>
+                             <br>
+                             <div class="row">
+                               <div class="form-group">
+                                 <div class="col-md-5"></div>
+                                 <div class="col-md-2">
+                                   <center>
+
+                                     <%= link_to "Back", admin_products_path,class: 'btn btn-block btn-info', style: "font-weight:bold;font-family: 'Merriweather', serif; background-color:#229954;border-color:#229954;" %>
+                                   </center>
+                                 </div>
+                                 <div class="col-md-5"></div>
+                               </div>
+                             </div>
+
+                  </center>
+              </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
